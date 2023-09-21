@@ -1,5 +1,6 @@
 package com.example.simplegmailclonereclyerview
 
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
@@ -27,14 +28,22 @@ class EmailAdapter(private val emails: List<Email>) : RecyclerView.Adapter<Email
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        TODO("Not yet implemented")
+        val context = parent.context
+        val inflater = LayoutInflater.from(context)
+
+        val contactView = inflater.inflate(R.layout.email_item, parent, false)
+
+        return ViewHolder(contactView)
     }
 
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+        return emails.size
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        val email = emails.get(position)
+        holder.senderTextView.text = email.sender
+        holder.titleTextView.text = email.title
+        holder.summaryTextView.text = email.summary
     }
 }
