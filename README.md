@@ -4,6 +4,8 @@ Submitted by: **Norsang Nyandak**
 
 Time spent: **6** hours spent in total
 
+![SimpleGmailClone](https://github.com/TNorsang/-SimpleGmailClone-Recycler-View-/assets/33474625/fb29dc0e-dacc-4940-b0e9-bd023d88ce8e)
+
 ## License
 
     Copyright [2023] [Norsang Nyandak]
