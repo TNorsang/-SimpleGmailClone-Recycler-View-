@@ -2,8 +2,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="10dp">
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:id="@+id/emailLayout">
 
     <TextView
         android:id="@+id/senderTv"
@@ -13,7 +14,9 @@
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Hedwig" />
+        tools:text="Hedwig"
+        android:textStyle="bold"
+        />
 
     <TextView
         android:id="@+id/titleTv"
@@ -29,6 +32,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="5dp"
+        android:lines="1"
+        android:ellipsize="end"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleTv"
         tools:text="Have you been able to finish the latest assignment? I'm stuck on the 3rd step and don't quite know what's wrong." />
